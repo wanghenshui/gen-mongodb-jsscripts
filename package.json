@@ -1,0 +1,12 @@
+{
+  "name": "gen-mongo-dbscripts",
+  "version": "0.0.0",
+  "description": "GenMongoDBScripts",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "dreamjs": "^0.1.8"
+  }
+}
