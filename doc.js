@@ -1,6 +1,6 @@
 'use strict';
 const dream = require('dreamjs');
-
+const tool = require('./tools.js')
 // 文档的结构
 // TODO: 不够复杂？
 dream.schema('User',{
@@ -129,6 +129,11 @@ dream.schema('FiltString',{
 });
 
 
+dream.customType('_FiltString',function(helper){
+	var v =[ JSON.stringify(tool.mergeOneJson(tool.genjson('FiltString',1)))];
+	console.log(v);
+	return helper.oneOf(v);
+});
 
 
 dream.customType('_maxTimeMS',function(helper){

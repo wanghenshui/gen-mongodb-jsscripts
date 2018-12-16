@@ -14,10 +14,10 @@ require('./doc.js');
 //require('./update.js').run();
 
 //delete
-require('./delete.js').run();
+//require('./delete.js').run();
 
 //aggregate
-//require('./aggregate.js').run();
+require('./aggregate.js').run();
 
 //distinct
 //require('./distinct.js').run();

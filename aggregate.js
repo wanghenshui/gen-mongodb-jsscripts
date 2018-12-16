@@ -52,7 +52,13 @@ dream.customType('_stageOperator',function(helper){
 });
 
 
+dream.schema('stageoperation1',{
+	op:'_stageOperator',
+	cond:'_FiltString'
+})
+
 exports.run=function(){
 	
-	console.log('db.optest.aggregate([%s,%s]);',);
+	console.log('db.optest.aggregate([%s]);',
+		JSON.stringify(tool.mergeOneJson(tool.genjson('stageoperation1',1))));
 }
